@@ -196,4 +196,8 @@ public:
 
         Node *current = START;
 
+        // Step 1: Traverse to find matching roll number
+        while (current != NULL && current->noMhs != rollNo)
+            current = current->next;
+
         
